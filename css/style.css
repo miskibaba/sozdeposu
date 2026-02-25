@@ -1,0 +1,964 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: background 0.6s ease;
+    color: white;
+}
+
+.home-theme {
+    background: linear-gradient(135deg, #141e30, #243b55);
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    margin: 15px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background: rgba(255,255,255,0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+.genel-theme {
+    background: linear-gradient(135deg, #1d2671, #c33764);
+}
+
+.soz-container {
+    padding: 30px;
+    display: grid;
+    gap: 20px;
+}
+
+.soz-card {
+    background: rgba(255,255,255,0.1);
+    padding: 25px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease;
+}
+
+.soz-card:hover {
+    transform: scale(1.02);
+}
+
+.soz-text {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.buttons button {
+    padding: 8px 15px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: rgba(255,255,255,0.2);
+    color: white;
+    transition: 0.3s;
+}
+
+.buttons button:hover {
+    background: rgba(255,255,255,0.4);
+}
+.page-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.page-header h1 {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+}
+
+.geri-btn {
+    background: rgba(255,255,255,0.2);
+    border: none;
+    padding: 8px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+}
+
+.geri-btn:hover {
+    background: rgba(255,255,255,0.4);
+}
+.alt-kategori-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    padding: 30px;
+}
+
+.alt-card {
+    background: rgba(255,255,255,0.1);
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.alt-card:hover {
+    background: rgba(255,255,255,0.3);
+    transform: scale(1.05);
+}
+
+.duygusal-theme {
+    background: linear-gradient(135deg, #42275a, #734b6d);
+}
+.ask-theme {
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+}
+.genel-theme { background: linear-gradient(135deg,#1d2671,#c33764); }
+.duygusal-theme { background: linear-gradient(135deg,#42275a,#734b6d); }
+.karizma-theme { background: linear-gradient(135deg,#000000,#434343); }
+.eglenceli-theme { background: linear-gradient(135deg,#ff512f,#dd2476); }
+.dini-theme { background: linear-gradient(135deg,#134e5e,#71b280); }
+.ozel-theme { background: linear-gradient(135deg,#ff9966,#ff5e62); }
+.hayat-theme { background: linear-gradient(135deg,#283c86,#45a247); }
+.sosyal-theme { background: linear-gradient(135deg,#3a1c71,#d76d77,#ffaf7b); }
+.soz-theme { background: linear-gradient(135deg,#141e30,#243b55); }
+.toast {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #222;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 25px;
+    opacity: 0;
+    transition: all 0.4s ease;
+    z-index: 999;
+}
+
+.toast.show {
+    opacity: 1;
+    bottom: 50px;
+}
+.rastgele-alan {
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    background: rgba(255,255,255,0.1);
+    border-radius: 20px;
+    font-size: 18px;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.4s ease;
+}
+
+.rastgele-alan.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.logo {
+    width: 160px;
+    transition: 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(90deg, #1e1e2f, #2c2c54);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+}
+
+body {
+    padding-top: 70px;
+}
+.logo-text {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.soz-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border: 1px solid #eee;
+    /* Mobil uyum için genişlik */
+    width: 90%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.soz-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    font-weight: 500;
+    margin: 0;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.buttons button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+}
+
+.buttons button:active {
+    background: #0056b3;
+}
+/* GENEL AYARLAR */
+:root {
+    --primary-color: #2c3e50; /* Koyu Lacivert/Gri (Ağır duruş) */
+    --accent-color: #e67e22;  /* Turuncu/Altın tonu (Dikkat çekici) */
+    --bg-color: #f4f7f6;      /* Arka plan */
+    --text-color: #333;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+}
+
+/* HEADER */
+.page-header {
+    background: linear-gradient(135deg, var(--primary-color), #1a252f);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.page-header h1 { margin: 0; letter-spacing: 2px; }
+
+/* SEO İÇERİK ALANI */
+.seo-content {
+    background: white;
+    padding: 30px 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    line-height: 1.8;
+}
+
+.seo-content h2 { color: var(--primary-color); font-size: 1.4rem; }
+
+/* KATEGORİ KARTLARI (MOBİL UYUMLU) */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.cat-card {
+    background: white;
+    padding: 25px 15px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    border-radius: 12px;
+    transition: 0.3s;
+    border-bottom: 4px solid var(--accent-color);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.cat-card:hover {
+    transform: translateY(-5px);
+    background: var(--accent-color);
+    color: white;
+}
+
+/* SÖZ KARTLARI (İç sayfalar için de geçerli) */
+.soz-card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    margin: 15px auto;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.soz-text {
+    font-size: 1.15rem;
+    color: #2c3e50;
+    text-align: center;
+    font-style: italic;
+}
+
+.buttons { display: flex; gap: 10px; }
+
+.buttons button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buttons button:first-child { background: #eee; color: #333; }
+.buttons button:last-child { background: var(--primary-color); color: white; }
+
+/* MOBİL AYARLAR */
+@media (max-width: 600px) {
+    .page-header { padding: 30px 10px; }
+    .category-grid { grid-template-columns: 1fr 1fr; } /* Telefonda yan yana ikişerli */
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: background 0.6s ease;
+    color: white;
+}
+
+.home-theme {
+    background: linear-gradient(135deg, #141e30, #243b55);
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    margin: 15px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background: rgba(255,255,255,0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+.genel-theme {
+    background: linear-gradient(135deg, #1d2671, #c33764);
+}
+
+.soz-container {
+    padding: 30px;
+    display: grid;
+    gap: 20px;
+}
+
+.soz-card {
+    background: rgba(255,255,255,0.1);
+    padding: 25px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease;
+}
+
+.soz-card:hover {
+    transform: scale(1.02);
+}
+
+.soz-text {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.buttons button {
+    padding: 8px 15px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: rgba(255,255,255,0.2);
+    color: white;
+    transition: 0.3s;
+}
+
+.buttons button:hover {
+    background: rgba(255,255,255,0.4);
+}
+.page-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.page-header h1 {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+}
+
+.geri-btn {
+    background: rgba(255,255,255,0.2);
+    border: none;
+    padding: 8px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+}
+
+.geri-btn:hover {
+    background: rgba(255,255,255,0.4);
+}
+.alt-kategori-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    padding: 30px;
+}
+
+.alt-card {
+    background: rgba(255,255,255,0.1);
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.alt-card:hover {
+    background: rgba(255,255,255,0.3);
+    transform: scale(1.05);
+}
+
+.duygusal-theme {
+    background: linear-gradient(135deg, #42275a, #734b6d);
+}
+.ask-theme {
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+}
+.genel-theme { background: linear-gradient(135deg,#1d2671,#c33764); }
+.duygusal-theme { background: linear-gradient(135deg,#42275a,#734b6d); }
+.karizma-theme { background: linear-gradient(135deg,#000000,#434343); }
+.eglenceli-theme { background: linear-gradient(135deg,#ff512f,#dd2476); }
+.dini-theme { background: linear-gradient(135deg,#134e5e,#71b280); }
+.ozel-theme { background: linear-gradient(135deg,#ff9966,#ff5e62); }
+.hayat-theme { background: linear-gradient(135deg,#283c86,#45a247); }
+.sosyal-theme { background: linear-gradient(135deg,#3a1c71,#d76d77,#ffaf7b); }
+.soz-theme { background: linear-gradient(135deg,#141e30,#243b55); }
+.toast {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #222;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 25px;
+    opacity: 0;
+    transition: all 0.4s ease;
+    z-index: 999;
+}
+
+.toast.show {
+    opacity: 1;
+    bottom: 50px;
+}
+.rastgele-alan {
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    background: rgba(255,255,255,0.1);
+    border-radius: 20px;
+    font-size: 18px;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.4s ease;
+}
+
+.rastgele-alan.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.logo {
+    width: 160px;
+    transition: 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(90deg, #1e1e2f, #2c2c54);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+}
+
+body {
+    padding-top: 70px;
+}
+.logo-text {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.soz-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border: 1px solid #eee;
+    /* Mobil uyum için genişlik */
+    width: 90%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.soz-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    font-weight: 500;
+    margin: 0;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.buttons button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+}
+
+.buttons button:active {
+    background: #0056b3;
+}
+/* GENEL AYARLAR */
+:root {
+    --primary-color: #2c3e50; /* Koyu Lacivert/Gri (Ağır duruş) */
+    --accent-color: #e67e22;  /* Turuncu/Altın tonu (Dikkat çekici) */
+    --bg-color: #f4f7f6;      /* Arka plan */
+    --text-color: #333;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+}
+
+/* HEADER */
+.page-header {
+    background: linear-gradient(135deg, var(--primary-color), #1a252f);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.page-header h1 { margin: 0; letter-spacing: 2px; }
+
+/* SEO İÇERİK ALANI */
+.seo-content {
+    background: white;
+    padding: 30px 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    line-height: 1.8;
+}
+
+.seo-content h2 { color: var(--primary-color); font-size: 1.4rem; }
+
+/* KATEGORİ KARTLARI (MOBİL UYUMLU) */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.cat-card {
+    background: white;
+    padding: 25px 15px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    border-radius: 12px;
+    transition: 0.3s;
+    border-bottom: 4px solid var(--accent-color);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.cat-card:hover {
+    transform: translateY(-5px);
+    background: var(--accent-color);
+    color: white;
+}
+
+/* SÖZ KARTLARI (İç sayfalar için de geçerli) */
+.soz-card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    margin: 15px auto;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.soz-text {
+    font-size: 1.15rem;
+    color: #2c3e50;
+    text-align: center;
+    font-style: italic;
+}
+
+.buttons { display: flex; gap: 10px; }
+
+.buttons button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buttons button:first-child { background: #eee; color: #333; }
+.buttons button:last-child { background: var(--primary-color); color: white; }
+
+/* MOBİL AYARLAR */
+@media (max-width: 600px) {
+    .page-header { padding: 30px 10px; }
+    .category-grid { grid-template-columns: 1fr 1fr; } /* Telefonda yan yana ikişerli */
+}
+/* KATEGORİ KARTLARI DÜZENLEME */
+.categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.card {
+    /* Cam efekti (Glassmorphism) - Arka plan ne olursa olsun üstte görünür */
+    background: rgba(255, 255, 255, 0.15) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 25px 15px;
+    border-radius: 18px;
+    text-decoration: none;
+    color: #ffffff !important;
+    font-weight: 700;
+    font-size: 17px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    min-height: 100px;
+}
+
+.card:hover {
+    background: rgba(255, 255, 255, 0.25) !important;
+    transform: translateY(-5px);
+    border-color: #d4af37; /* Altın rengi çerçeve vurgusu */
+}
+
+/* BUTONLARIN GÖRÜNMESİ İÇİN ÖZEL DÜZENLEME (İç Sayfalar İçin) */
+.soz-card .buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.soz-card .buttons button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    /* Butonların her temada görünmesi için belirgin renkler */
+    background: #ffffff !important; 
+    color: #2c3e50 !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    transition: 0.2s;
+}
+
+.soz-card .buttons button:last-child {
+    background: #d4af37 !important; /* Paylaş butonu altın rengi */
+    color: #000 !important;
+}
+
+.soz-card .buttons button:active {
+    transform: scale(0.95);
+}
+
+/* TELEFONDA KATEGORİLERİN YAN YANA DÜZGÜN DURMASI */
+@media (max-width: 480px) {
+    .categories {
+        grid-template-columns: 1fr 1fr; /* Kesinlikle yan yana 2 tane */
+        gap: 10px;
+        padding: 10px;
+    }
+    .card {
+        font-size: 15px;
+        padding: 20px 10px;
+    }
+}
+/* --- ALTIN RENK TEMASI AYARLARI --- */
+:root {
+    --gold-main: #d4af37;        /* Klasik Altın */
+    --gold-bright: #f9e272;      /* Parlak Altın */
+    --gold-dark: #996515;        /* Koyu Altın/Bronz */
+    --dark-bg: #0f172a;          /* Çok Koyu Lacivert (Altını öne çıkarır) */
+    --glass-white: rgba(255, 255, 255, 0.1);
+}
+
+/* Kategori Kartlarını Altın Yapıyoruz */
+.card {
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(212, 175, 55, 0.2)) !important;
+    border: 1px solid var(--gold-main) !important; /* Altın Çerçeve */
+    color: var(--gold-bright) !important;          /* Altın Yazı */
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    background: var(--gold-main) !important;
+    color: #000 !important; /* Üzerine gelince yazı siyah olsun ki okunsun */
+    box-shadow: 0 0 20px var(--gold-main);
+    transform: translateY(-5px);
+}
+
+/* Söz Kartı İçindeki Butonları Altın Yapıyoruz */
+.soz-card .buttons button {
+    background: var(--glass-white) !important;
+    color: #fff !important;
+    border: 1px solid var(--gold-main) !important;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+/* Sağdaki (Paylaş) Butonunu Tam Altın Yapalım */
+.soz-card .buttons button:last-child {
+    background: var(--gold-main) !important;
+    color: #000 !important;
+    border: none !important;
+}
+
+.soz-card .buttons button:hover {
+    background: var(--gold-bright) !important;
+    box-shadow: 0 0 10px var(--gold-main);
+}
+
+/* Sayfa Başlığı (Header) Altın Parıltısı */
+.page-header h1 {
+    color: var(--gold-main);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    border-bottom: 2px solid var(--gold-main);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.buttons button {
+    background: #ffffff !important; /* Arka plan beyaz kalsın dersen */
+    color: #000000 !important;    /* Yazı siyah olsun */
+    border: 1px solid #d4af37 !important; /* Altın rengi çerçeve (Görünürlük sağlar) */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Hafif gölge */
+}
+/* BUTONLARI HER ZEMİNDE GÖRÜNÜR KILAN KOD */
+.buttons button {
+    border: 2px solid #d4af37 !important; /* Altın kenarlık */
+    background: #1a1a1a !important;      /* Koyu zemin */
+    color: #d4af37 !important;            /* Altın yazı */
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.buttons button:hover {
+    background: #d4af37 !important;       /* Üzerine gelince tamamen altın olur */
+    color: #000 !important;
+}
+.buttons button {
+    background-color: #d4af37 !important; /* Altın Rengi */
+    color: black !important;
+    border: none !important;
+    font-weight: bold;
+}
+/* KATEGORİ VE SÖZ BUTONLARI İÇİN GÜNCEL STİL */
+.buttons button, .cat-card, .card {
+    background-color: #d4af37 !important; /* Standart Altın */
+    color: #000 !important;
+    border: 2px solid #b8860b !important;
+    font-weight: bold;
+    transition: all 0.3s ease; /* Yumuşak geçiş efekti */
+    cursor: pointer;
+}
+
+/* Üzerine gelince (Hover) Sarı Parlama Efekti */
+.buttons button:hover, .cat-card:hover, .card:hover {
+    background-color: #ffdf00 !important; /* Parlak Sarı */
+    box-shadow: 0 0 15px #ffdf00; /* Dışa doğru sarı parlama */
+    transform: scale(1.05); /* Hafif büyüme */
+    border-color: #fff !important; /* Kenarlık beyaz olsun */
+}
+
+/* Kopyala Butonu Özel (Beyaz kalmasın diye) */
+.soz-card .buttons button:first-child {
+    background-color: #f1f1f1 !important; 
+    color: #333 !important;
+}
+
+/* Paylaş Butonu Özel */
+.soz-card .buttons button:last-child {
+    background-color: #d4af37 !important;
+    color: #000 !important;
+}
