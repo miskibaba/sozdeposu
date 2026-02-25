@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ağır Sözler</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/script.js" defer></script>
+</head>
+
+<body class="soz-theme">
+
+<header class="page-header">
+<button class="geri-btn" onclick="geriDon()">← Geri</button>
+<h1>Motivasyon Sözleri</h1>
+</header>
+
+<section class="soz-container">
+
+<div class="soz-card">
+<p class="soz-text">Başaramazsın diyenler, denemeye cesaret edemeyenlerdir.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Yavaş ilerle ama asla geri gitme.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Bugün vazgeçersen, yarın pişman olursun.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Zor günler güçlü insanları ortaya çıkarır.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Hayaller korkakları değil, cesurları sever.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Düştüğün yer değil, kalktığın yer önemlidir.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+<div class="soz-card">
+<p class="soz-text">Zenginlik para değil, değer üretme gücüdür.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Disiplin yoksa hayal sadece hayaldir.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Risk almayan, büyük kazanamaz.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Para çalışana gelir, bahaneye değil.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Başarı sabah erken kalkmayı sever.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Konfor alanı zengin etmez.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Fikir çok, uygulayan az kazanır.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Disiplinli insan şans beklemez, fırsat üretir.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Zengin düşün, zengin yaşa.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Başarı detaylarda gizlidir.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Bugün çalışmayan yarın çalışmak zorunda kalır.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Parayı yönetemeyen, parayla yönetilir.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Büyük hedefler büyük disiplin ister.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Başarı bir gecede gelmez ama bir gecede kaybedilir.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Girişimci sorun görmez, çözüm görür.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Çok çalışmak değil, doğru çalışmak zengin eder.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Başarı, disiplinin ödülüdür.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Hedefi olmayanın geliri de olmaz.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Fırsat bekleme, üret.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Paranın dili çalışmaktır.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">İstikrar, zenginliğin anahtarıdır.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Büyük oynayan büyük kazanır.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Başarı korkanlara gelmez.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Kendine yatırım en yüksek getiridir.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Disiplinli insan bahaneye yer bırakmaz.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Zenginlik zihinde başlar.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Küçük adımlar büyük servetler doğurur.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Çalışırken yorul, fakir kalırken değil.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Girişim cesaretin ürünüdür.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Başarı planlı hareketi sever.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Parayı kovalamak yerine değeri kovala.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Harekete geçmeyen kazanamaz.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Zenginlik sabırlıların ödülüdür.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Başarı ter kokar.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Girişimcinin bahanesi olmaz.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Çalışmadan gelen para, çalışmadan gider.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Vizyonu olan yol bulur.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Disiplin özgürlüğün bedelidir.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Başarıyı isteyen, fedakârlığı göze alır.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Zengin olmak istiyorsan farklı düşün.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Hedefe kilitlenen yorulmaz.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Girişim korkuyu değil fırsatı görür.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Para sonucu, disiplin süreci temsil eder.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Büyük kazanç büyük cesaret ister.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Başarı, sabah alarmına saygı duyanları sever.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Girişimcinin en büyük sermayesi cesaretidir.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Zenginlik bir sonuçtur, disiplin bir alışkanlık.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Kazananlar vazgeçmeyenlerdir.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Büyük düşün, cesur hareket et, disiplinle kazan.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+<div class="soz-card">
+<p class="soz-text">Kendine inanmadığın gün kaybettiğin gündür.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Sabır en sessiz güçtür.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Başarı tesadüf değil, istikrardır.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Kendi sınırlarını yine kendin yıkarsın.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+</section>
+<div id="toast" class="toast"></div>
+</body>
+</html>

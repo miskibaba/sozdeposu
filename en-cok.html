@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>En Çok Kopyalanan</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/script.js" defer></script>
+</head>
+
+<body class="soz-theme">
+
+<header class="page-header">
+<button class="geri-btn" onclick="geriDon()">← Geri</button>
+<h1>En Çok Kopyalanan</h1>
+</header>
+
+<section class="soz-container" id="enCokContainer"></section>
+
+<div id="toast" class="toast"></div>
+
+<script>
+window.onload = function() {
+    const container = document.getElementById("enCokContainer");
+
+    let sozler = [];
+
+    for (let i = 0; i < localStorage.length; i++) {
+        let key = localStorage.key(i);
+        let value = localStorage.getItem(key);
+
+        if (!isNaN(value)) {
+            sozler.push({ text: key, count: parseInt(value) });
+        }
+    }
+
+    sozler.sort((a,b) => b.count - a.count);
+
+    sozler.slice(0,10).forEach(item => {
+        container.innerHTML += `
+        <div class="soz-card">
+            <p class="soz-text">${item.text}</p>
+            <small>${item.count} kez kopyalandı</small>
+        </div>`;
+    });
+}
+</script>
+<div id="toast" class="toast"></div>
+</body>
+</html>

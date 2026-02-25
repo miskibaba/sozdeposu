@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KAPAK- SözDeposu</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/script.js" defer></script>
+</head>
+
+<body class="soz-theme">
+
+<header class="page-header">
+    <button class="geri-btn" onclick="geriDon()">← Geri</button>
+    <h1>KAPAK SÖZ</h1>
+</header>
+
+<section class="soz-container">
+<!-- KAPAK BAŞLANGIÇ -->
+
+<div class="soz-card">
+<p class="soz-text">Ben değişmedim, sen gerçek yüzümü yeni gördün.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Adam sandıklarımız figüran çıktı.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Kalitem sabit, çevrem değişken.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Beni hafife alanlar, ağırlığımı taşıyamadı.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Gereksiz insanlara ayıracak zamanım yok.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Ben susarım ama unutursam affetmem.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Duruşum var, eğilmem.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Yanlış insanlara doğru insan olamam.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Karakterim pahalıdır, herkese satmam.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Benimle uğraşan kendini yorar.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<!-- Devam ediyor -->
+
+<div class="soz-card"><p class="soz-text">Netim, çünkü karmaşaya vaktim yok.</p><div class="buttons"><button onclick="kopyala(this)">Kopyala</button><button onclick="paylas(this)">Paylaş</button></div></div>
+
+<div class="soz-card"><p class="soz-text">Kaybettiğini sananlar, aslında beni kaybetti.</p><div class="buttons"><button onclick="kopyala(this)">Kopyala</button><button onclick="paylas(this)">Paylaş</button></div></div>
+
+<div class="soz-card"><p class="soz-text">Beni yargılamadan önce aynaya bak.</p><div class="buttons"><button onclick="kopyala(this)">Kopyala</button><button onclick="paylas(this)">Paylaş</button></div></div>
+
+<div class="soz-card"><p class="soz-text">Küçük hesaplar bana göre değil.</p><div class="buttons"><button onclick="kopyala(this)">Kopyala</button><button onclick="paylas(this)">Paylaş</button></div></div>
+
+<div class="soz-card"><p class="soz-text">Benim yolum uzun, sen kısa kaldın.</p><div class="buttons"><button onclick="kopyala(this)">Kopyala</button><button onclick="paylas(this)">Paylaş</button></div></div>
+
+<div class="soz-card"><p class="soz-text">Adamlık rol değil, karakterdir.</p><div class="buttons"><button onclick="kopyala(this)">Kopyala</button><button onclick="paylas(this)">Paylaş</button></div></div>
+
+<div class="soz-card"><p class="soz-text">Herkes haddini bilmeli.</p><div class="buttons"><button onclick="kopyala(this)">Kopyala</button><button onclick="paylas(this)">Paylaş</button></div></div>
+
+<div class="soz-card"><p class="soz-text">Benimle yarışma, seviyem farklı.</p><div class="buttons"><button onclick="kopyala(this)">Kopyala</button><button onclick="paylas(this)">Paylaş</button></div></div>
+
+<div class="soz-card"><p class="soz-text">Yanımda duramayan arkamdan konuşur.</p><div class="buttons"><button onclick="kopyala(this)">Kopyala</button><button onclick="paylas(this)">Paylaş</button></div></div>
+
+<div class="soz-card"><p class="soz-text">Benim suskunluğum zayıflık değil.</p><div class="buttons"><button onclick="kopyala(this)">Kopyala</button><button onclick="paylas(this)">Paylaş</button></div></div>
+</section>
+
+<div id="toast" class="toast"></div>
+
+</body>
+</html>

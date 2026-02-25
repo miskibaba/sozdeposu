@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ağır Sözler</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/script.js" defer></script>
+</head>
+
+<body class="soz-theme">
+
+<header class="page-header">
+<button class="geri-btn" onclick="geriDon()">← Geri</button>
+<h1>Ağır Sözler</h1>
+</header>
+
+<section class="soz-container">
+<div class="soz-card">
+<p class="soz-text">Ben sustukça kendini güçlü sandın, konuşursam yerini hatırlarsın.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Gidişin koymadı, dönüşüne kapıyı kapattım.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Yarım kalan her şey senden değil, karakterinden.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+<div class="soz-card">
+<p class="soz-text">Ben değişmedim, sadece artık herkese inanmıyorum.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Kaybettin sandın ama ben vazgeçtim.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Mesafem var çünkü hafızam sağlam.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Ben sustum diye hikâye bitmedi.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Kalbimi kıranlar, kapımı çalamaz.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Benimle aynı yerde olmak herkesin harcı değil.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Affettim ama eski ben değilim.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Sevdiğim gibi vazgeçerim de.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Benim sessizliğim en net cevaptır.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Yanlış kişiye denk gelmek kader değil, derstir.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Değer verdiğim kadar var oldun.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Beni kaybeden, kendini kaybeder.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Benimle iyi ol, kötü versiyonum pahalıdır.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Kalbim kırıldı ama karakterim sağlam.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Benim seviyeme çıkamayan, laf yetiştirir.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+<div class="soz-card">
+<p class="soz-text">Ben kırıldım ama eğilmedim.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Kalbimden sildiklerimi hafızamdan da silerim sanma.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Benim iyiliğimi zayıflık sananlar, gücümü görünce sustu.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">İhaneti affetmem, sadece hesabını zamana bırakırım.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Yüzüme gülüp arkamdan konuşanlar, aynaya bakınca utanır mı bilmem.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Ben kimseyi yarı yolda bırakmadım, isteyen kendi indi.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Değer verdiklerim azalınca huzurum arttı.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Sabrımı test edenler, sonuçtan memnun kalmadı.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Güven bir kere kırılır, sonra sadece mesafe kalır.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Ben değişmedim, sen gerçek yüzünü gösterdin.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Kaybettiğini sandığın ben değilim, şansındı.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Benimle uğraşma, sabrım bitince huzurun biter.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Duruşum ağır gelir, alışık değilsen yaklaşma.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Ben kimseyi kaybetmem, gitmek isteyen yolunu bulur.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Suskunluğum çaresizlik değil, seçilmiş mesafedir.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Yanlış kişiye güvenmenin bedelini, doğru duruşumla ödedim.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Benim kalbimden düşen, bir daha yerini bulamaz.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+<div class="soz-card">
+<p class="soz-text">Seni severken kendimden vazgeçtim, sen beni severken bile kendini seçtin.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Kalbimi emanet verdim, sen kırık teslim ettin.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Aşk dediğin iki kişilikti, sen egonu da getirdin.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Gidişin canımı yaktı ama dönüşün gururumu yakar.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Ben seni hep sevdim, sen hep bahaneni.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Kalbimde yer açtım, sen içimi boşalttın.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Aşk sandım, dersmiş.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Gözlerine inandım, sözlerin yalan çıktı.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Beni sevmedin belki ama çok güzel oyaladın.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Aşkın en kötüsü yarım bırakılanıdır.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Seni sevince dünya güzeldi, gidince gerçek oldu.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Kalbimi sana açtım, sen kapıyı çarpıp çıktın.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Aşk acısı geçer dediler, izleri kalır demediler.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Ben sana alıştım, sen bana geçtin.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Kalbim seni unutmadı ama aklım affetmedi.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<!-- TAM AŞK -->
+
+<div class="soz-card">
+<p class="soz-text">Sen yanımdayken dünya sustu, kalbim konuştu.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Aşk, göz göze gelince kalbin hızlanmasıdır.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Sen gülünce içimde bahar olur.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Ellerin ellerime değince tüm eksiklerim tamamlanır.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Kalbim adını ezberledi, silmeye niyeti yok.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Sen benim en güzel ihtimalimsin.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Aşk seninle anlam buldu.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Sen yanımda ol yeter, gerisi detay.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Kalbimin attığı yer senin yanın.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Birlikte susmak bile huzur seninle.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<!-- FELAKET DAMAR -->
+
+<div class="soz-card">
+<p class="soz-text">Benimle oyun oynayan, hayatla kaybeder.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Ben yıkılmam, yıkanın altında kalır.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Sabrım taşarsa, sen kum tanesi kalırsın.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Beni hafife alanı hayat ağır sınar.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Benim sessizliğim fırtına öncesidir.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Benimle düşman olan, aynaya düşman olur.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Haddini bilmeyene sınırı ben çizerim.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Ben kaybetmem, vazgeçerim.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Benimle aynı cümlede geçmek bile cesaret ister.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+<div class="soz-card">
+<p class="soz-text">Son sözüm değil, son duruşum konuşur.</p>
+<div class="buttons">
+<button onclick="kopyala(this)">Kopyala</button>
+<button onclick="paylas(this)">Paylaş</button>
+</div>
+</div>
+
+
+</section>
+<div id="toast" class="toast"></div></body>
+</html>
